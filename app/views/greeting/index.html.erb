@@ -1,0 +1,12 @@
+<% provide(:title, 'Sign up') %>
+<h1>Sign up</h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_for(@hello) do |f| %>
+      <%= f.label :hello %>
+      <%= f.text_field :hello %>
+      <%= f.submit "greeting", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
