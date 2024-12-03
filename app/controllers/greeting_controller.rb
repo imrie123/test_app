@@ -1,10 +1,10 @@
 class GreetingController < ApplicationController
-  def greeting
+  def index
     @hello = params[:hello]
     if @hello == "おはよう"
       render json:{status: "ok",message: "こんにちは"}
     else
-      render :new, status: :unprocessable_entity
+    puts "おはようしか受け付けません"
     end
   end
   private
